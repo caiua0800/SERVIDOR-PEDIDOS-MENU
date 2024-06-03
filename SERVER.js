@@ -43,6 +43,8 @@ app.post('/pedidoPronto', (req, res) => {
     }
 });
 
-
+app.get('/', (req, res) => {
+    res.send('Hello My Friend');
+});
 
 app.listen(PORT, () => { console.log(`Server running on port ${PORT}`) });
